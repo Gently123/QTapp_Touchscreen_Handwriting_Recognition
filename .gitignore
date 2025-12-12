@@ -1,0 +1,42 @@
+# Qt Creator 用户设置文件
+*.pro.user
+*.pro.user.*
+
+# Qt Creator 调试/发布生成的文件
+/build/
+/release/
+/debug/
+
+# 编译器生成的文件
+*.o
+*.a
+*.la
+*.lo
+*.pdb
+*.idb
+*.ilk
+*.exp
+*.lib
+*.dll
+*.so
+*.dylib
+*.exe
+*.out
+*.app
+
+# 依赖库
+*.dll
+*.lib
+*.so
+*.dylib
+
+# 临时文件
+*.swp
+*.bak
+*.log
+*.tmp
+
+# IDE 文件
+.idea/
+.vscode/
+.DS_Store
