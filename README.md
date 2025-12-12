@@ -22,9 +22,12 @@ MouseWriter 是一个基于 Qt 的全屏手写输入应用，使用 HID 数位�
 - **Qt 版本**：Qt 5.6 及以上（曾使用 Qt 5.6.3，MinGW 32bit 编译）。
 - **编译器**：MinGW 32bit（与 DLL 配合）。
 - **依赖库**：`hidapi.dll` 和手写识别 DLL（随仓库提供）。
+
 - 
 ## 关键实现点（便于调试） 
 - 程序以动态加载本地识别库为主，在 [mainwindow.cpp](mainwindow.cpp) 中通过 QLibrary resolve 取得函数指针： - 类型定义：[CharReco_CharRecoInitFunction](mainwindow.cpp), [CharReco_CharRecoGetParaFunction](mainwindow.cpp) 等 - 全局指针：[CharReco_CharRecoInit](mainwindow.cpp), [CharRecoGetPara](mainwindow.cpp) - 服务端识别相关：[CharRecoSvrRecognize](mainwindow.cpp), [CharRecoSvrInit](mainwindow.cpp) - CharReco 的类与导出函数在 [CharReco.h](CharReco.h) 中声明（例如类 [CCharReco](CharReco.h)，函数 [CharRecoStroking](CharReco.h)、[CharRecoStrokeEnd](CharReco.h)）。
+=======
+
 
 ## 构建与运行
 1. **打开与编译**：
